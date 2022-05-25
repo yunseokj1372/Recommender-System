@@ -10,6 +10,10 @@ url : https://grouplens.org/datasets/movielens/latest/
 
 Primary Dataset: ratings.csv
 
+
+
+A.
+
 Partition Process:
 1. User-based partition: train, validation, test set.
 2. Sending past data of train and validation set back to training set
@@ -19,6 +23,7 @@ Code: Partition_process.py
 Results: stored as parquet files in Result Folder
 
 
+B.
 
 Baseline Model: 
 Popularity : top 100 movies of every user based on each movie's average movie rating
@@ -27,6 +32,7 @@ Method: PySpark SQL
 Code: BaselineModel.py
 
 
+C.
 
 Latent Factor Model:
 1. Collaborative Filtering: PySpark SQL ALS model
